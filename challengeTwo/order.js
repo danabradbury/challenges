@@ -7,6 +7,7 @@
 
 function hitIt() {
 
+
     let itemsOne = document.getElementById('itemOne')
     let itemOneValue = itemOne.Value
     console.log(itemsOne)
@@ -31,11 +32,14 @@ function hitIt() {
     takedown = numberToChoice(randomItem());
     console.log('dana', takedown)
 
-    function numberToChoice(number) {
-        return ['douible leg takedown', 'single leg takedown', 'sprawl'][number];
+    function numberToChoice(grabItem) {
+        return ['douible leg takedown', 'single leg takedown', 'sprawl'][grabItem];
     }
-    
+
     function randomItem() {
         return Math.floor(Math.random() * 3);
+
     }
+   
 }
+
