@@ -5,23 +5,21 @@
 
 /* grabbed and set values */
 
+
 function hitIt() {
 
 
-    let itemsOne = document.getElementById('itemOne')
-    let itemOneValue = itemOne.Value
+    let itemsOne = document.getElementById('itemOne').innerHTML
     console.log(itemsOne)
 
-    let itemTwo = document.getElementById('itemTwo')
-    let itemTwoValue = itemTwo.Value
+    let itemTwo = document.getElementById('itemTwo').innerHTML
     console.log(itemTwo)
 
-    let itemThree = document.getElementById('itemThree')
-    let itemThreeValue = itemThree.Value
+    let itemThree = document.getElementById('itemThree').innerHTML
     console.log(itemThree)
 
     /* combinaed all items */
-    let items = [itemOne, itemTwo, itemThree]
+    let items =[itemsOne, itemTwo, itemThree]
     console.log(items)
 
     /* grabbed spacific item */
@@ -33,13 +31,15 @@ function hitIt() {
     console.log('dana', takedown)
 
     function numberToChoice(grabItem) {
-        return ['douible leg takedown', 'single leg takedown', 'sprawl'][grabItem];
+        return [grabItem];
     }
 
     function randomItem() {
         return Math.floor(Math.random() * 3);
 
     }
-   
+
+
+    
 }
 
