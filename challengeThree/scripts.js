@@ -2,12 +2,15 @@
 
 function list() {
     const input1 = document.getElementById('box1');
-    Console.log(input1);
+    let InputValue1 = input1.value;
+    Console.log(InputValue1);
 
     const input2 = document.getElementById('box2');
-    Console.log(input2);
+    let InputValue2 = input2.value;
+    Console.log(InputValue2);
 
     const input3 = document.getElementById('box3');
-    Console.log(input3);
+    let InputValue3 = input3.value;
+    Console.log(InputValue3);
 
 }
